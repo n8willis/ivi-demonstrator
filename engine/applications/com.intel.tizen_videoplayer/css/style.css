@@ -1,0 +1,292 @@
+
+.backgroundVideoClass {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 720px;
+	height: 1280px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.CarouselItem
+{
+	position: absolute;
+	width: 405px;
+	height:100px;
+	top: 777px;
+	left: 155px;
+}
+
+.textPanel {
+	position: absolute;
+	width: 405px;
+	height:100px;
+	top: 977px;
+	left: 340px;
+}
+
+.blueIconText {
+	position: relative;
+	height: 25px;
+}
+
+/* time progress bar and remaining time */
+.timeBarClass {
+	position: relative;
+	bottom: 0;
+	width: 325px;
+	height: 80px;
+	font-size: large;
+}
+
+.volumeControlClass {
+	z-index: 4;
+	position: absolute;
+	top: 100px;
+	left: 500px;
+	width: 200px;
+	height: 50px;
+}
+
+.progressPot {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+}
+
+.progressBar {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 325px;
+	height: 10px;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+
+.leftText {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 40px;
+	height: 15px;
+}
+
+.rightText {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	width: 40px;
+	height: 15px;
+}
+
+/*video controls*/
+.videoControlsButtons {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 700px;
+	height: 100px;
+	visibility: hidden;
+}
+
+.testVideoControlArea
+{
+	position: absolute;
+	z-index:2;
+	top: -350px;
+	left: 12px;
+	height:350px;min-height:350px;max-height:350px;
+	width:680px;min-width:680px;max-width:680px;
+    padding-top:0px;padding-left:0px;padding-right:0px;padding-bottom:0px;
+	background-color: black;
+}
+
+.videoPlayer
+{
+	position: absolute;
+	top: 188px;
+	left: 2px;
+	height:550px;min-height:550px;max-height:550px;
+	width:700px;min-width:700px;max-width:700px;
+    padding-top:0px;padding-left:0px;padding-right:0px;padding-bottom:0px;
+}
+
+.vp_videoframe {
+    border-width:1px;border-color:grey;border-style:solid;
+    height:338px;min-height:338px;max-height:338px;
+	width:664px;min-width:664px;max-width:664px;
+	padding-top:5px;padding-left:5px;padding-right:5px;padding-bottom:5px;
+    vertical-align: middle;
+	position:absolute;
+	top:1px;
+	left:1px;
+}
+
+.videotimeBarClass {
+	position: absolute;
+	top: -80px;
+	left:30px;
+	width: 645px;
+	height: 80px;
+	font-size: large;
+	visibility: hidden;
+}
+
+.videoprogressPot {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+}
+
+.videoprogressBar {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 635px;
+	height: 10px;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+
+.leftvideoText {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 350px;
+	height: 15px;
+}
+
+.rightvideoText {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	width: 40px;
+	height: 15px;
+}
+
+
+.previousBtn {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.prevBtnInactive {
+	opacity: 0.5;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.pauseBtn {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.playBtn {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.nextBtn { 
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.nextBtnInactive {
+	opacity: 0.5;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.shuffleBtn { 
+	width: 45px;
+	height: 33px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 0px;
+	margin-left: 60px;
+}
+
+.repeatBtn { 
+	width: 45px;
+	height: 33px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 0;
+	margin-left: 60px;
+}
+
+.previousBtnActive {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.nextBtnActive {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.shuffleBtnActive {
+	width: 45px;
+	height: 33px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 0px;
+	margin-left: 60px;
+}
+
+.videorepeatBtnActive {
+	width: 45px;
+	height: 33px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 0px;
+	margin-left: 60px;
+}
+

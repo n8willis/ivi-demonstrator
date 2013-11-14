@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://com.intel.tizen/navigation" version="0.5" viewmodes="fullscreen">
+    <icon src="icon.png"/>
+    <content src="index.html"/>
+<name>Navigation</name>
+<tizen:application id="U5RkjIRKVS" required_version="1.0"/>
+<feature name="http://tizen.org/api/application" required="true"/>
+    <feature name="http://tizen.org/api/application.kill" required="true"/>
+    <feature name="http://tizen.org/api/application.launch" required="true"/>
+    <feature name="http://tizen.org/api/application.read" required="true"/>
+<access origin="http://localhost:8088" subdomains="true"/>
+    <access origin="https://api.intel.com/js/location/v1/intelmaps.js" subdomains="true"/>
+    <access origin="https://api.intel.com" subdomains="true"/>
+    <access origin="https://telmap.com" subdomains="true"/>
+</widget>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, target-densityDpi=device-dpi" />
+		
+
+		<!-- SCREEN resolution 320x480 (web view 320x455) -->
+		<title>Concept UI</title><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link rel="stylesheet" href="style/mainstyle.css" type="text/css" />
+		<script type="text/javascript" src="scripts/jquery-1.8.1.min.js"> </script>
+		
+		<script type="text/javascript" src="scripts/cordova-2.3.0.js"> </script>
+		<script type="text/javascript" charset="utf-8" src="scripts/childbrowser.js"></script>
+		
+    <script type="text/javascript" src="https://api.intel.com/js/v1/intel.cloudservices.js"></script>
+    <script type="text/javascript" src="https://api.intel.com/js/location/v1/intelmaps.js"></script>
+		<!--<script type="text/javascript" src="https://api.intel.com/js/v1/intel.cloudservices.min.js"> </script>-->
+		
+		<script type="text/javascript" src="scripts/appData.js"> </script>
+		<script type="text/javascript" src="scripts/main.js"> </script>
+		<script type="text/javascript" src="scripts/friends.js"> </script>
+		<script type="text/javascript" src="scripts/gapi.js"> </script>
+		
+		<script type="text/javascript" src="scripts/views/corpus.js"> </script>
+		<script type="text/javascript" src="scripts/views/footer.js"> </script>
+		<script type="text/javascript" src="scripts/quo.js"> </script>
+		<script type="text/javascript" src="scripts/v3_epoly.js"> </script>
+		<script type="text/javascript" src="scripts/utility.js"> </script>
+		<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+		<script type="text/javascript" charset="utf-8">
+			
+			function onLoad() {
+				smartee.main.init();
+			}	    
+		</script>
+	  
+	</head>  
+	 <body onload="onLoad()">
+		<div id='content'>
+	    <h1>Events</h1>
+	    <ul id='events'></ul>
+	    <a href='#' id='authorize-button' onclick='handleAuthClick();'>Login</a>
+      <a href='#' onclick='makeApiCall();'>makeApiCall()</a>
+      <a href='#' onclick='placeLocationMarker();'>placeLocationMarker()</a>
+      <a href='#' onclick='placeFriendMarker();'>placeFriendMarker()</a>
+      <a href='#' onclick='placeRoute();'>placeRoute()</a>
+    </div>
+    <div id="intelIdentity"></div>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,24 @@
+<div class="appElement boxShadow4 borderColorTheme"
+	onClick='StoreLibrary.openAppDetail("{{:id}}");'>
+	<div class="appImage">
+		<img src="{{:iconUrl}}" />
+	</div>
+	<div class="appInfoBox textBgColorNormalTransparent">
+		<div class="appTitle fontSizeLarge fontWeightBold fontColorNormal">{{:name}}</div>
+		<div class="appSubtitle fontSizeXSmall fontWeightBold fontColorTheme">{{if
+			installed==true}}Installed{{else if price ==0
+			}}Free{{else}}{{:price}} Eur{{/if}}</div>
+		<div class="appRating">
+			<div
+				class="ratingIcons {{if rating>0}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+			<div
+				class="ratingIcons {{if rating>1}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+			<div
+				class="ratingIcons {{if rating>2}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+			<div
+				class="ratingIcons {{if rating>3}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+			<div
+				class="ratingIcons {{if rating>4}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+		</div>
+	</div>
+</div>

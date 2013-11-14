@@ -1,0 +1,53 @@
+.carousel {
+	-webkit-transition: 2s;
+	position: absolute;
+	top: 230px;
+	left: -15px;
+	width: 12000px;
+	padding: 0;
+	margin: 0;
+}
+
+.carouselItem {
+	float: left;
+	width: 240px;
+	height: 240px;
+	margin-right: 15px;
+	padding: 0;
+}
+
+.carouselItemSelected {
+	box-shadow: 0 0 5px 1px #1DA2FF /*background-color:#BFBFFF;*/
+}
+
+.carouselImage {
+	width: 100%;
+	height: 100%;
+}
+
+.albumCarouselDescription {
+	position: absolute;
+	width: 100%;
+	top: 145px;
+	left: 0;
+	height: 95px;
+	text-align: center;
+}
+
+.albumCarouselDescriptionText {
+	width: 220px;
+	margin: 18px auto 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.carouselShadow {
+	position: relative;
+	width: 246px;
+	height: 110px;
+	top: -100px;
+	opacity: 0.2;
+	-webkit-transform: rotateX(180deg);
+	-webkit-transform-origin: 50% 50%;
+	display: none;
+}

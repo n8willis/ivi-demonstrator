@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>DASHBOARD</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=720, height=1280, user-scalable=no" />
+
+<link rel="stylesheet" href="../../css/car/car.css" />
+<link rel="stylesheet" href="../../css/user/user.css" />
+<link rel="stylesheet" href="./css/style.css" />
+
+<script type="text/javascript" src="../../css/car/components/jQuery/jquery-1.8.2.js"></script>
+<script type='text/javascript' src='../../apiEndpointBase.js'></script>
+<script type='text/javascript' src='../../persistentConsole.js'></script>
+
+<script type='text/javascript'
+	src='../../css/car/car.js'></script>
+<script type='text/javascript'
+	src='../../css/user/user.js'></script>
+<script type='text/javascript'
+	src='../../themeengine.js'></script>
+<script type='text/javascript'
+	src='../../carindicator.js'></script>
+
+<!-- jsRender Library Import -->
+<script type="text/javascript" src="../../css/car/components/jsViews/jsrender.js"></script>
+<script type="text/javascript" src="../../css/car/components/jsViews/template.js"></script>
+
+<!-- Components -->
+<script type='text/javascript'
+	src='../../css/car/components/dateTime/dateTime.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/dateTime/dateTime.css" />
+
+<script type='text/javascript'
+	src='../../css/car/components/boxCaption/boxCaption.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/boxCaption/boxCaption.css" />
+
+<script type='text/javascript'
+	src='../../css/car/components/topBarIcons/topBarIcons.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/topBarIcons/topBarIcons.css" />
+
+<script type='text/javascript'
+	src='../../css/car/components/progressBar/progressBar.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/progressBar/progressBar.css" />
+
+<script type="text/javascript"
+	src="../../css/car/components/bottomPanel/bottomPanel.js"></script>
+
+<script type='text/javascript' src='./components/statusBox/statusBox.js'></script>
+<link rel="stylesheet" href="./components/statusBox/statusBox.css" />
+<!-- end Components -->
+
+<script type='text/javascript' src='./js/main.js'></script>
+<script type='text/javascript' src='./js/dashboardControler.js'></script>
+<script type='text/javascript' src='./js/carIndicator.js'></script>
+
+</head>
+
+<body>
+	<div class="dashboardBackGround">
+		<div id="error" class="fontColorNormal fontSizeMedium" style="z-index: 100;"></div>
+		<div class="carImage"></div>
+		<div class="dashboardCircleAll"></div>
+		<div id="frontLightsImage" class="dashboardFrontLightsActive frontLightsImage"></div>
+		<div id="rearLightsImage" class="dashboardRearLightsActive rearLightsImage"></div>
+		<div id="clockElement"></div>
+		<div id="leftWhell" class="whelImage leftWhell"></div>
+		<div id="rightWhell" class="whelImage rightWhell"></div>
+		<div id="batteryElement" class = "batteryElement">
+			<div id="batteryLevelCaption" class="boxIconText batteryLevelCaption"></div>
+			<div id="batteryProgressBar" class = "batteryProgressBar"></div>
+			<div class="batteryImage"></div>
+			<div id="batteryStatus"
+				class="fontSizeLarger fontWeightBold fontColorNormal batteryStatus">82%</div>
+			<div id="batteryRange"
+				class="fontSizeLarger fontWeightBold fontColorTheme batteryRange">~215MI</div>
+		</div>
+		<div id="weatherElement" class = "weatherElement">
+			<div id="dashBoardWeatherIcon" class="dashBoardWeatherThunder dashBoardWeatherIcon"></div>
+			<div id="weatherCaption" class="boxIconText weatherCaption"></div>
+			<div id="weatherStatus"
+				class="fontSizeXXLarge fontWeightBold fontColorNormal weatherStatus">75.20°F</div>
+			<div id="weatherCity" class="fontSizeLarge fontColorDimmed weatherCity">SAN
+				FRANCISCO</div>
+		</div>
+
+		<div id="leftFrontPressure" class="statusIndicatorClass leftFrontPressure statusBox"></div>
+		<div id="leftFrontLine" class="dashboardLineLong leftFrontLine"></div>
+
+		<div id="rightFrontPressure" class="statusIndicatorClass rightFrontPressure statusBox"></div>
+		<div id="rightFrontLine" class="dashboardLineLong rightFrontLine"></div>
+
+		<div id="leftRearPressure" class="statusIndicatorClass leftRearPressure statusBox"></div>
+		<div id="leftRearLine" class="dashboardLineLong leftRearLine"></div>
+
+		<div id="engineStatus" class="statusIndicatorClass engineStatus">
+			<div id="leftTopCorner" class="corner leftTopCorner"></div>
+			<div id="leftBottomCorner" class="corner leftBottomCorner"></div>
+			<div id="rightTopCorner" class="corner rightTopCorner"></div>
+			<div id="rightBottomCorner" class="corner rightBottomCorner"></div>
+			<div class="boxIconText">
+				<div class="boxIconRectangleSmall bgColorTheme"></div>
+				<div class="boxIconCaptionSmall fontSizeXXSmall fontWeightBold fontColorLight">ENGINE STATUS</div>
+			</div>
+			<div id="gearboxStatus" class="fontSizeXXXLarge fontWeightBold fontColorNormal gearboxStatus">D</div>
+			<div id="textIndicator" class="fontSizeSmall fontWeightBold fontColorNormal textIndicator">65 mph</div>
+			<div id="statusIndicator" class="fontSizeXSmall fontWeightBold fontColorDimmed statusIndicator">78.123 mi</div>
+		</div>
+
+		<div id="rightRearPressure" class="statusIndicatorClass rightRearPressure statusBox"></div>
+		<div id="rightRearLine" class="dashboardLineLong rightRearLine"></div>
+
+		<div id="fanCircle" class="dashboardCircle fanCircle"></div>
+		<div id="fanElement">
+			<div id="fanIcon" class="dashboardFan fanIcon"></div>
+			<div id="fanStatus"
+				class="fontSizeSmall fontColorNormal fontWeightBold fanStatus">69.20°F</div>
+		</div>
+		<div id="fanButton" class = "fanButton" onClick="dashBoardControler.onFanButtonClick()"></div>
+
+		<div id="leftPadlock" class="padlocInactive leftPadlock"
+			onClick="dashBoardControler.onChildLockClick()"></div>
+		<div id="rightPadlock" class="padlocInactive rightPadlock"
+			onClick="dashBoardControler.onChildLockClick()"></div>
+		<div id="randomizer" class="dashboardCircle randomizer" onClick = ""></div>
+
+		<div id="childLock" class="childLock" onClick="dashBoardControler.onChildLockClick()">
+
+			<div id="leftTopCorner" class="corner leftTopCorner"></div>
+			<div id="leftBottomCorner" class="corner leftBottomCorner"></div>
+			<div id="rightTopCorner" class="corner rightTopCorner"></div>
+			<div id="rightBottomCorner" class="corner rightBottomCorner"></div>
+
+			<div id="childLockText"
+				class="fontColorNormal fontSizeSmall  fontWeightBold childLockText">CHILD
+				LOCK ACTIVATED</div>
+			<div id="childLockLine" class="dashboardLineShort childLockLine"></div>
+		</div>
+		<div id="frontLightsButton" class="dashboardCircle frontLightsButton"></div>
+		<div id="rearLightsButton" class="dashboardCircle rearLightsButton"></div>
+
+
+
+		<div id="avgConsumptionElement" class = "avgConsumptionElement">
+			<div id="avgEConsumption" class = "avgEConsumption"></div>
+			<div class="batteryImage"></div>
+			<div id="avgConsumptionCaption"
+				class="fontColorNormal  fontSizeSmall  fontWeightBold avgConsumptionCaption">0.28
+				KW-H / MI</div>
+			<div id="avgConsumptionStatus"
+				class="fontColorDimmed  fontSizeXSmall fontWeightBold avgConsumptionStatus">~350 MI
+				/ FULL CHARGE</div>
+		</div>
+		<div id="rearLElement">
+			<div id="rearLDisplay" class = "rearLDisplay"></div>
+			<div id="rearLButton" class="dashboardButton rearLButton"
+				onClick="dashBoardControler.onRearLDisplayClick();">
+
+				<div
+					class="bgColorThemeTransparent boxShadowInset dashboardButton dashboardButtonOpacity"></div>
+
+				<div id="rearLButtonText"
+					class="dashboardButtonText fontColorNormal fontSizeMedium fontWeightBold">OFF</div>
+			</div>
+		</div>
+		<div id="rearRElement">
+			<div id="rearRDisplay" class = "rearRDisplay"></div>
+			<div id="rearRButton" class="dashboardButton rearRButton"
+				onClick="dashBoardControler.onRearRDisplayClick();">
+				<div
+					class="bgColorThemeTransparent boxShadowInset dashboardButton dashboardButtonOpacity"></div>
+				<div id="rearRButtonText"
+					class="dashboardButtonText fontColorNormal fontSizeMedium fontWeightBold">OFF</div>
+			</div>
+		</div>
+		<div id="topBarIcons"></div>
+		<div id="bottomPanel" class="bottomPanel bottomPanelImg"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=720, height=1280, user-scalable=no" />
+<!--  jquery and plugins  -->
+<script type="text/javascript"
+	src="../../css/car/components/jQuery/jquery-1.8.2.js"></script>
+
+<!-- user and car theme, theme engine  -->
+<link rel="stylesheet" href="../../css/car/car.css" />
+<link rel="stylesheet" href="../../css/user/user.css" />
+<script type="text/javascript" src='../../css/car/car.js'></script>
+<script type="text/javascript" src='../../css/user/user.js'></script>
+<script type="text/javascript" src='../../apiEndpointBase.js'></script>
+<script type='text/javascript' src='../../persistentConsole.js'></script>
+<script type="text/javascript" src='../../themeengine.js'></script>
+<script type='text/javascript'
+	src='../../css/car/components/boxCaption/boxCaption.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/boxCaption/boxCaption.css" />
+<script type='text/javascript'
+	src='../../css/car/components/topBarIcons/topBarIcons.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/topBarIcons/topBarIcons.css" />
+<script type="text/javascript"
+	src="../../css/car/components/bottomPanel/bottomPanel.js"></script>
+<script type="text/javascript"
+	src="../../css/car/components/progressBar/progressBar.js"></script>
+<link rel="stylesheet"
+	href="../../css/car/components/progressBar/progressBar.css" />
+
+<script type="text/javascript"
+	src="https://api.intel.com/js/location/v1/intelmaps.js"></script>
+
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/v3_epoly.js"></script>
+
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+<title>NAVIGATION</title>
+</head>
+
+<body>
+
+	<div id="topBarIcons"></div>
+
+	<div id="placesButton"
+		class=" libraryButton fontSizeSmaller fontWeightBold fontColorNormal">Places</div>
+
+	<div id="upNextRectangle"></div>
+	<div id="turnArrow"></div>
+
+	<div id="navigationPanel"
+		class="navigationPanel fontSizeLarge fontWeightBold fontColorNormal"></div>
+
+	<div id="distanceTo" class=" fontSizeSmaller  fontColorDimmedLight "></div>
+
+	<div id="destinationProgress"></div>
+
+	<div id="destinationItem">
+		<div id="destinationRectangle"></div>
+		<div id="destinationAddress"
+			class="fontSizeSmall fontWeightBold fontColorNormal"></div>
+
+		<div id="destinationAddressTown"
+			class="fontSizeXXSmall fontColorDimmedLight"></div>
+	</div>
+
+	<div id="stillToGoItem">
+		<div id="stillToGoRectangle"></div>
+		<div id="stillToGoTimeAndDistance"
+			class="fontSizeXLarge  fontColorNormal"></div>
+		<div id="arrivalText"
+			class="fontSizeSmaller fontWeightBold fontColorNormal"></div>
+	</div>
+
+	<div id="map_div" class="mapPanel"></div>
+
+	<div class="iconBbox button bgColorDark borderColorDark boxShadow4Active"
+		onClick="switchMapSatelitteView()">
+		<div id="satelliteButton" class="satelitteIcon"></div>
+		<div id="mapButton" class="mapIcon"></div>
+	</div>
+
+	<div id="bottomPanel" class="bottomPanel bottomPanelImg"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+/*carousel control*/
+
+.carousel {
+	position: absolute;
+	top: 230px;
+	left: 0; /* 5px; */
+	width: 12000px;
+	height: 480px;
+	padding: 0;
+	margin: 0;
+	-webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+
+.carouselItem { 
+	float: left;
+	width: 240px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0;
+}
+
+.carouselItemSelected {
+	box-shadow: 0 0 5px 1px #1DA2FF 
+}
+
+.carouselImage {
+	width: 240px;
+	height: 240px;
+}
+
+.albumCarouselDescription {
+	width: 240px;
+	height: 95px;
+	bottom: 95px;
+}
+
+.albumCarouselDescriptionText {
+	text-align: center;
+	top: 20px;
+}
+
+.carouselShadow {
+	position: relative;
+	width: 240px;
+	height: 50px;
+	top: -100px;
+	opacity: 0.2;
+	display: none;
+	-webkit-transform: rotateX(180deg);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: rotateX(180deg);
+	-moz-transform: 50% 50%;
+    -ms-transform: rotateX(180deg);
+	-ms-transform: 50% 50%;
+    -o-transform: rotateX(180deg);
+	-o-transform: 50% 50%;
+    transform: rotateX(180deg);
+    transform: 50% 50%;
+}
+
+.backgroundAudioClass {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 720px;
+	height: 1280px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* spectrum analyzer */
+.spectrumAnalyzer {
+	position: absolute;
+	top: 775px;
+	left: 300px;
+	width: 400px;
+	height: 110px;
+}
+
+.barAnalyzer {
+	position: absolute;
+	width: 33px;
+	height: 5px;
+	float: left;
+	margin-left: 5px;
+}
+
+.bar1Class {
+	left: 0;
+}
+
+.bar2Class  {
+	left: 38px;
+}
+
+.bar3Class  {
+	left: 76px;
+}
+
+.bar4Class  {
+	left: 114px;
+}
+
+.bar5Class  {
+	left: 152px;
+}
+
+.bar6Class  {
+	left: 190px;
+}
+
+.bar7Class  {
+	left: 228px;
+}
+
+.bar8Class  {
+	left: 266px;
+}
+
+.bar9Class {
+	left: 304px;
+}
+
+.bar10Class  {
+	left: 342px;
+}
+
+/* text panel artist, album, song title */
+.currentlyPlayingPreviewClass {
+	position: absolute;
+	top: 588px;
+	left: 55px;
+}
+
+.textPanel {
+	position: absolute;
+	width: 405px;
+	height:100px;
+	top: 577px;
+	left: 338px;
+}
+
+.blueIconText {
+	position: relative;
+	height: 25px;
+}
+
+/* time progress bar and remaining time */
+.timeBarClass {
+	position: relative;
+	bottom: 0;
+	width: 325px;
+	height: 80px;
+	font-size: large;
+}
+
+.volumeControlClass {
+	position: absolute;
+	top: 928px;
+	left: 35px;
+	width: 660px;
+	height: 60px;
+	background: none;
+}
+
+.progressPot {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+}
+
+.progressBar {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 325px;
+	height: 10px;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+
+.leftText {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 40px;
+	height: 15px;
+}
+
+.rightText {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	width: 40px;
+	height: 15px;
+}
+
+/*audio controls*/
+.audioControlsButtons {
+	position: absolute;
+	top: 1030px;
+	left: 0;
+	width: 700px;
+	height: 100px;
+}
+
+.previousBtn {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.prevBtnInactive {
+	opacity: 0.5;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.pauseBtn {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.playBtn {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.nextBtn { 
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.nextBtnInactive {
+	opacity: 0.5;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.shuffleBtn { 
+	width: 45px;
+	height: 33px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 35px;
+	margin-left: 60px;
+}
+
+.repeatBtn { 
+	width: 45px;
+	height: 33px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 0;
+	margin-left: 60px;
+}
+
+.previousBtnActive {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.nextBtnActive {
+	opacity: 1;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 55px;
+	margin-left: 60px;
+}
+
+.shuffleBtnActive {
+	width: 45px;
+	height: 33px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 35px;
+	margin-left: 60px;
+}
+
+.repeatBtnActive {
+	width: 45px;
+	height: 33px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 0;
+	margin-left: 60px;
+}
+
+.songNameTextPosition {
+	top: 12px;
+}
+
+.artistNameTextMargin {
+	margin-bottom: 5px;
+}

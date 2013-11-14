@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=720, height=1280, user-scalable=no" />
+<title>VIDEO PLAYER</title>
+
+<!--  jquery and plugins  -->
+<script type="text/javascript"
+	src="../../css/car/components/jQuery/jquery-1.8.2.js"></script>
+<script type='text/javascript' src='../../apiEndpointBase.js'></script>
+<script type='text/javascript' src='../../persistentConsole.js'></script>
+
+<!-- jsRender Library Import -->
+<script type="text/javascript"
+	src="../../css/car/components/jsViews/jsrender.js"></script>
+<script type="text/javascript"
+	src="../../css/car/components/jsViews/template.js"></script>
+	
+	
+
+
+<!-- User and car theme and javascripts  -->
+<link rel="stylesheet" href="../../css/car/car.css" />
+<link rel="stylesheet" href="../../css/user/user.css" />
+<script type="text/javascript" src="../../css/car/car.js"></script>
+<script type="text/javascript" src="../../css/user/user.js"></script>
+<script type="text/javascript" src='../../themeengine.js'></script>
+<script type="text/javascript" src='../../VideoPlayerDefines.js'></script>
+
+
+
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/UfrmCarouselList.css" />
+
+<!-- Video Player -->
+<script type="text/javascript" 	src="./components/timeProgressBar/videotimeProgressBar.js"></script>
+<script type="text/javascript" src="./components/Carusel/UfrmDefine.js"></script>
+<script type="text/javascript" src="./components/Carusel/UfrmListItem.js"></script>
+<script type="text/javascript" src="./components/Carusel/UfrmRoot3DList.js"></script>
+
+<!--<script type="text/javascript" src="./js/VideoPlayerDefines.js"></script>-->	
+<script type="text/javascript" src="./js/main.js"></script>
+
+
+<!-- Components -->
+<script type="text/javascript"
+	src="../../css/car/components/bottomPanel/bottomPanel.js"></script>
+<script type="text/javascript"
+	src="../../css/car/components/buttonControls/buttonControls.js"></script>
+<script type='text/javascript'
+	src='../../css/car/components/progressBar/progressBar.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/progressBar/progressBar.css" />
+<script type='text/javascript'
+	src='../../css/car/components/topBarIcons/topBarIcons.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/topBarIcons/topBarIcons.css" />
+<script type='text/javascript'
+	src='../../css/car/components/boxCaption/boxCaption.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/boxCaption/boxCaption.css" />
+<script type='text/javascript'
+	src='../../css/car/components/dateTime/dateTime.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/dateTime/dateTime.css" />
+<script type="text/javascript"
+	src='../../css/car/components/alphabetBookmark/alphabetBookmark.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/alphabetBookmark/alphabetBookmark.css" />
+<script type="text/javascript"
+	src="../../css/car/components/musicLibrary/musicLibrary.js"></script>
+<script type="text/javascript"
+	src='../../css/car/components/library/library.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/library/library.css" />
+</head>
+
+<body>
+	<div id="backgroundAudio"
+		class="backgroundVideoClass defaultPageBackgroundColor">
+		<div id="clockElement"></div>
+
+        <div id="videoPlayerMain" class="videoPlayer">
+        		
+		    <div id="videoFrameArea" class="testVideoControlArea">
+		    	<video id="video_frame" class="vp_videoframe" onclick="PlayPauseVideo()" ></video>
+		    </div>
+		    
+		    <div id="videoTimeBar" class="videotimeBarClass"></div>
+
+            <div id="videoButtons" class="videoControlsButtons"></div>
+        </div>
+        
+
+		<!--<div id="volumeControl" class="volumeControlClass"></div> -->
+
+		<div id="bottomPanel" class="bottomPanel bottomPanelImg">
+			<div id="volumeControl" class="volumeControlClass"></div>
+		</div>
+
+	</div>
+	<div id="CarouselItemID" class="CarouselItem"></div>
+	<div id="topBarIcons"></div>
+
+	<div id="musicLibrary" class="library pageBgColorNormalTransparent"></div>
+</body>
+</html>

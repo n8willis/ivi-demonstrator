@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://com.intel.tizen/navigationgoogle" version="0.5" viewmodes="fullscreen">
+    <icon src="icon.png"/>
+    <content src="index.html"/>
+<name>Navigation Google</name>
+<tizen:application id="aGjcxHjwjm" required_version="1.0"/>
+<feature name="http://tizen.org/api/application" required="true"/>
+    <feature name="http://tizen.org/api/application.kill" required="true"/>
+    <feature name="http://tizen.org/api/application.launch" required="true"/>
+    <feature name="http://tizen.org/api/application.read" required="true"/>
+    <access origin="http://localhost:8088/" subdomains="true"/>
+</widget>

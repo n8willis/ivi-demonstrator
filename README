@@ -1,0 +1,78 @@
+AGL Contest SDK
+
+1. Content
+
+AGL-Contest-SDK/
+├── docs
+├── engine
+├── LICENSE
+└── README
+
+docs - Documentation of the Tizen IVI engine infrastructure and reference
+        themes.
+engine - AGL Demonstrator UI engine based on the Tizen IVI engine.
+LICENSE - License information.
+README - This file.
+
+
+2. Installation
+
+You will need to install node.js and the node package manager (npm) on your
+system. Most Linux distributions provide them as packages that you can directly
+install using your distribution's package management system. Please refer
+to the documentation of your distribution.
+
+You can also directly obtain node.js and npm from http://nodejs.org website.
+
+No further installation is necessary after node.js and npm are installed.
+
+
+3. Running
+
+Your system must have an active network connection for the AGL Demonstrator
+engine to function properly.
+
+Change directory to the "engine" subdirectory. From there execute:
+
+   $ npm start intel-tizen-ivi-engine
+
+This will start the UI engine. Open a web browser and navigate to
+
+   http://localhost:8088/application/com.intel.tizen_homescreen/index.html
+
+This will open the home screen of the demo UI. Alternatively, navigate to
+
+   http://localhost:8088
+
+and click on the "Home Screen" link.
+
+
+4. Troubleshooting
+
+a) Newer Versions of node.js
+
+The AGL Demonstrator engine has been tested with node.js version 0.8.x.
+Newer version of node.js may require you to update the log4js package
+in the engine to a newer version. To do so edit the the file
+
+   engine/node_modules/intel-tizen-ivi-engine/package.json
+
+and change the line
+
+  "log4js" : "0.5.5"
+
+to
+
+  "log4js" : "0.6.2"
+
+and then run
+
+  npm install log4js
+
+from the
+
+   engine/node_modules/intel-tizen-ivi-engine
+
+directory.
+ 
+

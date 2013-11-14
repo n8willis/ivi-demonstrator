@@ -1,0 +1,183 @@
+#backgroundStore
+{
+	position: absolute;
+	width: 720px;
+	height: 1280px;
+	
+}
+#appDetailWraper{
+	position: absolute;
+	top:480px;
+	left :30px;
+	width:660px;
+	height:600px;
+}
+
+.storePromotedAppsCellHidden {
+	display: none;
+}
+
+.storePromotedAppsCellImage {
+	height: 148px;
+	width: 181px;
+	margin: 3px;
+}
+.storePromotedAppsCellText {
+	text-align: center;
+	font-size: x-large;
+	color: white;
+	text-shadow: none;
+	position: relative;
+	background-color: #111111;
+	width: 100%;
+	height: 30px;
+	opacity: 0.6; 
+	left: 0;
+	top: -30px;
+
+}
+.ratingIcons
+{
+	width: 20px;
+	height: 18px;
+	background-repeat: no-repeat;
+}
+
+
+/*new added after code clear in detailApplication.css*/
+.iconElement {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	width: 145px;
+	height: 136px;
+	margin: 0 auto;
+	float: left;
+	
+}
+
+.detailIcon {
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+}
+
+.ratingTableDetail {
+	position: absolute;
+	top: 155px;
+	left: 20px;
+	width: 250px;
+	height: 40px;
+}
+
+.ratingIcons {
+	float: left;
+}
+.iconStarActive {
+	display: block;
+		background-repeat: no-repeat;
+}
+.iconStarInActive {
+	display: block;
+	background-repeat: no-repeat;
+}
+
+.priceElement {
+	position: absolute;
+	left: 250px;
+	top: 35px;
+	width: 250px;
+}
+.priceTitle {
+	display: inline-block;
+	width: 100px;
+}
+.priceAmount {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+}
+.installButtons{
+	position: relative;
+	top:20px;
+	width:150px;
+	height:30px;
+	padding:10px;
+	border:5px;
+	border-style:solid;
+}
+.btnText {
+		text-align:center;
+}
+.infoWrapper {
+	position: absolute;
+	top: 130px;
+	left: 15px;
+	width: 900px;
+}
+.descriptionElement {
+	position: relative;
+	top: 80px;
+}
+.versionElement {
+	position: relative;
+	top: 100px;
+}
+.detailDescription {
+	position: relative;
+	top: 3px;
+	width: 600px;
+}
+.versionTitle {
+	position: relative;
+	display: inline-block;
+	
+}
+.versionNumber {
+	position: relative;
+	display: inline-block;
+}
+.imagesElement {
+	position: relative;
+	top: 120px;
+	left: 0;
+
+}
+
+.imageElement {
+	width: 180px;
+	height: 400px;
+	float: left;
+	overflow: hidden;
+	margin-top: 10px;
+	background-repeat:no-repeat;
+}
+
+.textPanel {
+	position: relative;
+	width: 405px;
+	top: 50px;
+	display: none;
+}
+/*
+.installBarClass {
+	position: relative;
+	bottom: 0;
+	width: 1px;
+	height: 10px;
+}
+*/
+.installText {
+	text-align: left;
+}
+
+.progressBar {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 325px;
+	height: 10px;
+	border-style: solid;
+	border-width: 0 0 4px 0;
+}
+

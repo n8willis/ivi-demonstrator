@@ -1,0 +1,233 @@
+.phoneBody {
+	width: 720px;
+	margin: 0;
+	min-height: 1280px;
+	height: auto !important;
+	height: 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.inputPhoneNumberBox {
+	padding-top: 195px;
+	padding-left: 190px;
+}
+
+.inputPhoneNumber {
+	width: 215px;
+	height: 75px;
+	line-height: 75px;
+	padding-right: 90px;
+	padding-left: 30px;
+	border: none;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.inputPhoneNumber:focus {
+	outline: none;
+}
+
+.inputPhoneNumberBox .deleteButton {
+	display: inline-block;
+	vertical-align: top;
+	margin: 18px 0 0 -73px;
+	padding: 0;
+	width: 55px;
+	height: 36px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.callButton {
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 108px;
+	border: none;
+	width: 72px;
+	height: 157px;
+	margin-right: 7px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.callingTrue {
+	margin-top: 279px;
+	background-color: rgb(255, 3, 3);
+	background-color: rgba(255, 3, 3, 0.8);
+}
+
+.callingFalse {
+	margin-top: 117px;
+	background-color: rgb(138, 255, 0);
+	background-color: rgba(138, 255, 0, 0.54);
+}
+
+.numbersBox {
+	margin-top: 7px;
+	display: inline-block;
+	width: 430px;
+	font-size: 0;
+	margin-bottom: 44px;
+}
+
+.numberButton {
+	float: left;
+	padding: 0;
+	padding-top: 20px;
+	width: 105px;
+	height: 80px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
+}
+
+.numberButtonLetters {
+	margin-top: -3px;
+}
+
+.specialChar {
+	padding-top: 30px;
+	height: 70px;
+}
+
+.contactsCarousel li {
+	display: block;
+	float: left;
+}
+
+.carouselBox {
+	width: 240px;
+	height: 315px;
+	margin: 0 10px 20px 10px;
+	white-space: normal;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 30px rgba(0, 0, 0, .7);
+	border-width: 1px;
+	border-style: solid;
+	text-transform: uppercase;
+}
+
+.carouselPhotoArea {
+	margin: 5px;
+	text-align: center;
+	border-style: solid;
+	border-width: 0;
+	border-bottom-width: 2px;
+}
+
+.carouselPhotoBox {
+	margin: 32px auto 28px auto;
+	width: 120px;
+	height: 120px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.carouselPhoto {
+	width: 100%;
+	height: 100%;
+}
+
+.carouselInfoBox {
+	width: 205px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.carouselCallContact {
+	margin-top: 15px;
+	margin-bottom: -5px;
+}
+
+.carouselName {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.carouselNumber {
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 160px;
+	padding-left: 45px;
+	line-height: 38px;
+	cursor: pointer;
+}
+
+.callBox {
+	margin: 0;
+	margin-left: 61px;
+}
+
+.callInfoBox {
+	width: 300px;
+	vertical-align: top;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.callPhotoBox {
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.callPhoto {
+	width: 100%;
+	height: 100%;
+}
+
+.callDuration {
+	margin-left: 60px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 46px;
+}
+
+.inCallWith {
+	margin-top: 11px;
+}
+
+.callName {
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+.callControlsBox {
+	width: 328px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+	margin-left: 13px;
+	font-size: 0;
+}
+
+.controlButton {
+	display: inline-block;
+	padding: 70px 0 13px 0;
+	width: 140px;
+	margin-right: 6px;
+	margin-bottom: 8px;
+	background-repeat: no-repeat;
+	background-position: center 15px;
+	box-shadow: 10px 10px 100px rgba(0, 0, 0, .7);
+}
+
+.callVolumeControl {
+	margin-left: -25px;
+	margin-top: 25px;
+	width: 653px;
+	height: 60px;
+}

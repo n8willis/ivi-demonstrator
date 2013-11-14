@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=720, height=1280, user-scalable=no" />
+<title>MUSIC PLAYER</title>
+
+<!--  jquery and plugins  -->
+<script type="text/javascript"
+	src="../../css/car/components/jQuery/jquery-1.8.2.js"></script>
+<script type='text/javascript' src='../../apiEndpointBase.js'></script>
+<script type='text/javascript' src='../../persistentConsole.js'></script>
+
+<!-- jsRender Library Import -->
+<script type="text/javascript"
+	src="../../css/car/components/jsViews/jsrender.js"></script>
+<script type="text/javascript"
+	src="../../css/car/components/jsViews/template.js"></script>
+<!-- CarouselView -->
+<script type="text/javascript" src="./js/jcarousel.js"></script>
+
+<!-- User and car theme and javascripts  -->
+<link rel="stylesheet" href="../../css/car/car.css" />
+<link rel="stylesheet" href="../../css/user/user.css" />
+<script type="text/javascript" src="../../css/car/car.js"></script>
+<script type="text/javascript" src="../../css/user/user.js"></script>
+<script type="text/javascript" src='../../themeengine.js'></script>
+
+
+
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/music_library.css" />
+
+<!-- Music Player -->
+<script type="text/javascript" src="../../audioService.js"></script>
+<script type="text/javascript" src="./js/music_library.js"></script> 
+<script type="text/javascript" src="../../css/car/components/audioPlayer/audioPlayer.js"></script>
+<script type="text/javascript" src="./components/infoPanel/infoPanel.js"></script>
+<script type="text/javascript"
+	src="./components/timeProgressBar/timeProgressBar.js"></script>
+<script type="text/javascript"
+	src="./components/spectrumAnalyzer/spectrumAnalyzer.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+
+<!-- Components -->
+<script type="text/javascript"
+	src="../../css/car/components/bottomPanel/bottomPanel.js"></script>
+<script type="text/javascript"
+	src="../../css/car/components/buttonControls/buttonControls.js"></script>
+<script type='text/javascript'
+	src='../../css/car/components/progressBar/progressBar.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/progressBar/progressBar.css" />
+<script type='text/javascript'
+	src='../../css/car/components/topBarIcons/topBarIcons.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/topBarIcons/topBarIcons.css" />
+<script type='text/javascript'
+	src='../../css/car/components/boxCaption/boxCaption.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/boxCaption/boxCaption.css" />
+<script type='text/javascript'
+	src='../../css/car/components/dateTime/dateTime.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/dateTime/dateTime.css" />
+<script type="text/javascript"
+	src='../../css/car/components/alphabetBookmark/alphabetBookmark.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/alphabetBookmark/alphabetBookmark.css" />
+<script type="text/javascript"
+	src="../../css/car/components/musicLibrary/musicLibrary.js"></script>
+<script type="text/javascript"
+	src='../../css/car/components/library/library.js'></script>
+<link rel="stylesheet"
+	href="../../css/car/components/library/library.css" />
+
+</head>
+
+<body>
+	<div id="backgroundAudio"
+		class="backgroundAudioClass defaultPageBackgroundColor">
+		<div id="clockElement"></div>
+
+		<!-- caroselView  ontouchmove="Carousel.touchMove(this)"
+			onontouchend="Carousel.touchEnd(this)"-->
+		<div id="carouselObject" class="carousel"
+			ontouchstart="Carousel.touch(this)">
+			<div id="carousel_wrap"></div>
+		</div>
+
+		<div onClick="openMusicLibrary();"
+			class="button libraryButton fontSizeSmaller fontWeightBold fontColorNormal">LIBRARY</div>
+
+		<img id="currentlyPlayingPreview"
+			class="currentlyPlayingPreviewClass carouselImage boxShadow2" src=""
+			alt="" />
+
+		<audio id="audioPlayer" type="audio/ogg"></audio>
+
+		<div id="volumeControl" class="volumeControlClass"></div>
+
+		<div id="audioButtons" class="audioControlsButtons"></div>
+
+		<div id="audioInfoPanel" class="textPanel">
+			<div id="timeBar" class="timeBarClass"></div>
+			<div id="infoPanel"></div>
+		</div>
+
+		<div id="spectAnalyzer" class="spectrumAnalyzer"></div>
+
+		<div id="bottomPanel" class="bottomPanel bottomPanelImg"></div>
+
+	</div>
+	<div id="topBarIcons"></div>
+
+	<div id="musicLibrary" class="library pageBgColorNormalTransparent"></div>
+</body>
+</html>

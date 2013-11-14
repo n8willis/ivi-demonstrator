@@ -1,0 +1,68 @@
+<div>
+	<div class="iconElement">
+		<div class="detailIcon">
+			<img src="{{:iconUrl}}"
+				style="width: 100%; height: 100%;">
+		</div>
+		<div class="ratingTableDetail">
+			<div
+				class="ratingIcons {{if rating>0}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+			<div
+				class="ratingIcons {{if rating>1}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+			<div
+				class="ratingIcons {{if rating>2}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+			<div
+				class="ratingIcons {{if rating>3}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+			<div
+				class="ratingIcons {{if rating>4}}iconStarActive{{else}}iconStarInActive{{/if}}"></div>
+		</div>
+	</div>
+	<div class="priceElement">
+
+		<div class="priceTitle fontSizeLarge fontColorNormal fontWeightBold">PRICE:</div>
+		<div class="priceAmount  fontSizeLarge fontWeightBold fontColorTheme">{{if
+			price ==0 }}FREE{{else}}{{:price}} EUR{{/if}}</div>
+			<div id="installInfo" class="textPanel">
+				<div id="installText" class="installText fontColorNormal fontSizeLarge fontWeightBold">INSTALLING...</div>
+				<div id="installBar" class="installBarClass progressBar borderColorTheme"></div>
+			</div>
+			{{if category_id != "user_theme" }}
+			<div class="installButtons borderColorDark bgColorDarkTransparent">	
+	 			{{if installed !=true}}
+				
+				<div onclick='StoreLibrary.installApp("{{:id}}");'>
+					<div class="btnText fontColorNormal fontSizeLarge fontWeightBold">INSTALL</div>
+				</div>
+				
+				{{/if}} 
+				{{if installed ==true}}
+				<div onclick='StoreLibrary.uninstallApp("{{:id}}");'>
+					<div class="btnText fontColorNormal fontSizeLarge fontWeightBold">UNINSTALL</div>
+				</div>
+				{{/if}}
+			</div>
+			{{/if}}
+		</div>	
+		
+	</div>
+	<div class="infoWrapper">
+		<div class="descriptionElement">
+			<div class="fontSizeLarge fontColorNormal fontWeightBold">DESCRIPTION:</div>
+			<div class="detailDescription fontSizeSmall fontColorDimmed fontWeightBold ">{{:description}}</div>
+		</div>
+		<div class="versionElement">
+			<div class="versionTitle fontSizeLarge fontColorNormal fontWeightBold">VERSION:</div>
+			<div class="versionNumber fontSizeLarge fontColorDimmed fontWeightBold">{{:version}}</div>
+		</div>
+
+		<div class="imagesElement">
+			<div class="fontSizeLarge fontColorNormal fontWeightBold">SCREENSHOTS:</div>
+		
+			{{foreach imageObjects}}
+				<div class="imageElement" style="background: url('{{:url}}'); background-repeat:no-repeat; color: white; ">
+				</div>
+				{{/foreach}}
+
+		</div>
+	</div>
+</div>

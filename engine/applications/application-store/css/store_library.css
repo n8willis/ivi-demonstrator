@@ -1,0 +1,104 @@
+.storeLibraryContentList .appElement {
+	padding: 10px 0 10px 0;
+	height: 70px;
+	box-shadow: none;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 0;
+	text-align: left;
+	cursor: pointer;
+}
+
+.storeLibraryContentList .appImage {
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	margin-right: 20px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.storeLibraryContentList .appImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.storeLibraryContentList .appInfoBox {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 11px;
+	background-color: transparent !important;
+}
+
+.storeLibraryContentList .appTitle {
+	text-transform: uppercase;
+}
+
+.storeLibraryContentList .appSubtitle {
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.storeLibraryContentList .appRating {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.storeLibraryContentGrid {
+	line-height: 0;
+}
+
+.storeLibraryContentGrid .appElement {
+	width: 180px;
+	height: 180px;
+	display: inline-block;
+	margin-right: 7px;
+	margin-bottom: 10px;
+	line-height: 0;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.storeLibraryContentGrid .appImage {
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.storeLibraryContentGrid .appImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.storeLibraryContentGrid .appInfoBox {
+	position: absolute;
+	top: 95px;
+	left: 0;
+	width: 180px;
+	height: 85px;	
+	text-align: center;
+}
+
+.storeLibraryContentGrid .appTitle {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 160px;
+	margin: 10px auto 0 auto;	
+	text-transform: uppercase;
+}
+
+.storeLibraryContentGrid .appSubtitle {
+	text-transform: uppercase;	
+}
+
+.storeLibraryContentGrid .appRating {
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+}

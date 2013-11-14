@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src\routes\userStatusService.ts - Intel Tizen IVI Engine</title>
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.7.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="..&#x2F;assets/favicon.png">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;combo?3.7.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="https:&#x2F;&#x2F;www.tizen.org&#x2F;sites&#x2F;all&#x2F;themes&#x2F;tizen_theme&#x2F;logo.png" title="Intel Tizen IVI Engine"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.2012105.151454</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/AbstractService.AbstractService.html">AbstractService.AbstractService</a></li>
+            
+                <li><a href="..&#x2F;classes/AbstractService.AbstractServiceOptions.html">AbstractService.AbstractServiceOptions</a></li>
+            
+                <li><a href="..&#x2F;classes/AbstractService.EndpointAction.html">AbstractService.EndpointAction</a></li>
+            
+                <li><a href="..&#x2F;classes/AbstractService.EndpointActionParameter.html">AbstractService.EndpointActionParameter</a></li>
+            
+                <li><a href="..&#x2F;classes/ApiEndpointBase.ApiEndpointBase.html">ApiEndpointBase.ApiEndpointBase</a></li>
+            
+                <li><a href="..&#x2F;classes/AudioService.AudioService.html">AudioService.AudioService</a></li>
+            
+                <li><a href="..&#x2F;classes/AudioService.StatusData.html">AudioService.StatusData</a></li>
+            
+                <li><a href="..&#x2F;classes/CarIndicatorService.CarIndicatorService.html">CarIndicatorService.CarIndicatorService</a></li>
+            
+                <li><a href="..&#x2F;classes/CarIndicatorService.RandomizerData.html">CarIndicatorService.RandomizerData</a></li>
+            
+                <li><a href="..&#x2F;classes/CarIndicatorService.StatusData.html">CarIndicatorService.StatusData</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.AlphabetBookmark.html">com.intel.tizen.coulomb.2012.AlphabetBookmark</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.AudioPlayer.html">com.intel.tizen.coulomb.2012.AudioPlayer</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.BottomPanel.html">com.intel.tizen.coulomb.2012.BottomPanel</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.BoxCaption.html">com.intel.tizen.coulomb.2012.BoxCaption</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.ButtonControlsObj.html">com.intel.tizen.coulomb.2012.ButtonControlsObj</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.Carousel.html">com.intel.tizen.coulomb.2012.Carousel</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.Clock.html">com.intel.tizen.coulomb.2012.Clock</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.ClockPlugin.html">com.intel.tizen.coulomb.2012.ClockPlugin</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.global.html">com.intel.tizen.coulomb.2012.global</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.jQuery.html">com.intel.tizen.coulomb.2012.jQuery</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.Library.html">com.intel.tizen.coulomb.2012.Library</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.MusicLibraryFileSystem.html">com.intel.tizen.coulomb.2012.MusicLibraryFileSystem</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.progressBarPlugin.html">com.intel.tizen.coulomb.2012.progressBarPlugin</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.Settings.html">com.intel.tizen.coulomb.2012.Settings</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.Tabs.html">com.intel.tizen.coulomb.2012.Tabs</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.Themes.html">com.intel.tizen.coulomb.2012.Themes</a></li>
+            
+                <li><a href="..&#x2F;classes/com.intel.tizen.coulomb.2012.TopBarIcons.html">com.intel.tizen.coulomb.2012.TopBarIcons</a></li>
+            
+                <li><a href="..&#x2F;classes/Engine.Server.html">Engine.Server</a></li>
+            
+                <li><a href="..&#x2F;classes/EventSourceDispatcher.EventSourceDispatcher.html">EventSourceDispatcher.EventSourceDispatcher</a></li>
+            
+                <li><a href="..&#x2F;classes/EventSourceDispatcher.EventUpdateData.html">EventSourceDispatcher.EventUpdateData</a></li>
+            
+                <li><a href="..&#x2F;classes/HomeScreenService.HomeScreenService.html">HomeScreenService.HomeScreenService</a></li>
+            
+                <li><a href="..&#x2F;classes/PackageRepositoryService.AvailablePackageData.html">PackageRepositoryService.AvailablePackageData</a></li>
+            
+                <li><a href="..&#x2F;classes/PackageRepositoryService.CategoryData.html">PackageRepositoryService.CategoryData</a></li>
+            
+                <li><a href="..&#x2F;classes/PackageRepositoryService.InstalledPackageData.html">PackageRepositoryService.InstalledPackageData</a></li>
+            
+                <li><a href="..&#x2F;classes/PackageRepositoryService.PackageEventData.html">PackageRepositoryService.PackageEventData</a></li>
+            
+                <li><a href="..&#x2F;classes/PackageRepositoryService.PackageRepositoryOptions.html">PackageRepositoryService.PackageRepositoryOptions</a></li>
+            
+                <li><a href="..&#x2F;classes/PackageRepositoryService.PackageRepositoryService.html">PackageRepositoryService.PackageRepositoryService</a></li>
+            
+                <li><a href="..&#x2F;classes/PackageRepositoryService.ThemeData.html">PackageRepositoryService.ThemeData</a></li>
+            
+                <li><a href="..&#x2F;classes/PersistentConsole.console.html">PersistentConsole.console</a></li>
+            
+                <li><a href="..&#x2F;classes/ThemeEngineService.ThemeEngineService.html">ThemeEngineService.ThemeEngineService</a></li>
+            
+                <li><a href="..&#x2F;classes/TizenApplicationStubService.TizenApplicationStubService.html">TizenApplicationStubService.TizenApplicationStubService</a></li>
+            
+                <li><a href="..&#x2F;classes/UserStatusService.UserDetails.html">UserStatusService.UserDetails</a></li>
+            
+                <li><a href="..&#x2F;classes/UserStatusService.UserSettings.html">UserStatusService.UserSettings</a></li>
+            
+                <li><a href="..&#x2F;classes/UserStatusService.UserStatusService.html">UserStatusService.UserStatusService</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: src\routes\userStatusService.ts</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+import abstractService = module(&quot;abstractService&quot;);
+import themeEngineService = module(&quot;themeEngineService&quot;);
+import carIndicatorService = module(&quot;carIndicatorService&quot;);
+import packageRepositoryService = module(&quot;packageRepositoryService&quot;);
+import express = module(&quot;express&quot;);
+import util = module(&quot;util&quot;);
+
+&#x2F;**
+ * @namespace UserStatusService
+ *&#x2F;
+
+&#x2F;**
+* Wraps user settings that are maintaned as persistent
+* @class UserSettings
+*&#x2F;
+interface UserSettings {
+    &#x2F;** 
+    * Theme ID.
+    * @property name
+    * @type {String}
+    *&#x2F;
+    theme: string;
+    &#x2F;** 
+    * Car indicator status
+    * @property carStatus
+    * @type {StatusData}
+    *&#x2F;
+    carStatus: carIndicatorService.StatusData;
+}
+
+&#x2F;**
+* Wraps single user details
+* @class UserDetails
+*&#x2F;
+interface UserDetails {
+    &#x2F;** 
+    * User ID.
+    * @property id
+    * @type {String}
+    *&#x2F;
+    id: number;
+    &#x2F;** 
+    * User settings.
+    * @property settings
+    * @type {UserSettings}
+    *&#x2F;
+    settings: UserSettings;
+    &#x2F;** 
+   * Flag indicating if this user is currently selected.
+   * @property selected
+   * @type {Boolean}
+   *&#x2F;
+    selected: bool;
+}
+
+&#x2F;** 
+* &#x60;&#x2F;user&#x60;
+*
+* Declares User status API which provides methods to persist user status and allows user context switching. This functionality is used in cooperation
+* with NFC to demonstrate IVI adaptation when approached by different users using contactless method. Users are identified by cookie &#x60;iviUser&#x60; sent from
+* server back to NFC-enabled device. 
+* @class UserStatusService
+* @extends AbstractService.AbstractService
+* @constructor
+*&#x2F;
+export class UserStatusService extends abstractService.AbstractService {
+    &#x2F;** 
+    * Contains array of registered users and their respective settings
+    * @property userDetails
+    * @type {UserDetails[]}
+    * @private
+    *&#x2F;
+    private userDetails: UserDetails[] = [];
+
+    &#x2F;** 
+    * @method constructor
+    * @param packageRepository {PackageRepositoryService} Instance of &#x60;PackageRepositoryService&#x60;
+    * @param eventSourceDispatcher {EventSourceDispatcher} Instance of &#x60;EventSourceDispatcher&#x60;
+    * @param carIndicator {CarIndicatorService} Instance of &#x60;CarIndicatorService&#x60;
+    *&#x2F;
+    constructor (private themeEngine: themeEngineService.ThemeEngineService, private carIndicator: carIndicatorService.CarIndicatorService,
+                private packageRepository: packageRepositoryService.PackageRepositoryService) {
+        super({
+            name: &quot;UserStatus&quot;,
+            endpointName: &quot;user&quot;,
+            description: &quot;User management&quot;,
+            apiClassName: &quot;UserManagement&quot;
+        });
+    }
+
+    &#x2F;** 
+    * Attach this class to Express HTTP server application and insert default user.
+    * @method attachApplication
+    * @param aApplication {ExpressApplication} Instance of Express application
+    *&#x2F;
+    attachApplication(aApplication: any) {
+        this.actions.splice(this.actions.length, 0, {
+            type: &quot;get&quot;,
+            title: &quot;Login&quot;,
+            apiMethod: &quot;login&quot;,
+            endpoint: &quot;&#x2F;login&quot;,
+            callback: this.login
+        }, {
+            type: &quot;get&quot;,
+            title: &quot;Get status&quot;,
+            endpoint: &quot;&#x2F;get&quot;,
+            callback: this.get
+        });
+
+        this.userDetails.push({
+            id: 0,
+            selected: true,
+            settings: {
+                theme: this.packageRepository.__getUserTheme().id,
+                carStatus: this.carIndicator.status
+            }
+        });
+
+        super.attachApplication(aApplication);
+    }
+
+    &#x2F;** 
+    * Returns currently selected user.
+    * @method _getSelectedUser
+    * @private
+    * @return {UserData}
+    *&#x2F;
+    _getSelectedUser() {
+        var result;
+        this.userDetails.forEach(function (userDetail) {
+            if (userDetail.selected) {
+                result = userDetail;
+                return true;
+            }
+        });
+
+        return result;
+    }
+
+    &#x2F;** 
+   * Select new user
+   * @method _selectUser
+   * @private
+   * @param id {UserData} User ID of user to be selected
+   *&#x2F;
+    _selectUser(id: number) {
+        var self = this;
+        &#x2F;&#x2F; Remeber current settings
+        var currentUser = this._getSelectedUser();
+        var currentThemeId = this.packageRepository.__getUserTheme().id;
+        var currentCarStatus = this.carIndicator.status;
+
+        this.userDetails.forEach(function (userDetail) {
+            userDetail.selected = id == userDetail.id;
+            if (userDetail.selected) {
+                self.logger.info(&quot;Selecting user %d&quot;, userDetail.id);
+                self.themeEngine._setUserTheme(userDetail.settings.theme);
+                self.carIndicator._setStatus(userDetail.settings.carStatus);
+
+                return true;
+            }
+        });
+
+        currentUser.settings.theme = currentThemeId;
+        currentUser.settings.carStatus = currentCarStatus;        
+    }
+
+    &#x2F;**
+    * &#x60;[GET] &#x2F;login&#x60; Login by new user. If no iviUser cookie is sent in request or cookie content is not recognized as registered user it&#x27;s considered a new user 
+    * and current status is stored with new identificator. Otherwise current settings are stores for last selected user and user data from cookie are 
+    * retrieved and setup.
+    * @method login
+    *&#x2F;
+    login(aRequest: express.ExpressServerRequest, aResponse: express.ExpressServerResponse) {
+        var self = this;
+        var userId: number = !!aRequest.cookies &amp;&amp; aRequest.cookies.iviUser;
+
+        if (userId) {
+            var found = false;
+            this.userDetails.forEach(function (userDetail) {
+                if (userDetail.id == userId) {
+                    found = true;
+                    return true;
+                }
+            });
+
+            if (found) {
+                this._selectUser(userId);
+            }
+            else
+                userId = undefined;
+        }
+
+        if (!userId) {
+            userId = new Date().getTime();
+            this.logger.info(&quot;Adding new user %d&quot;, userId);
+
+            this.userDetails.push({
+                id: userId,
+                selected: true,
+                settings: {
+                    theme: this.packageRepository.__getUserTheme().id,
+                    carStatus: this.carIndicator.status
+                }
+            });
+        }
+
+        &#x2F;&#x2F; Put it two years in future
+        aResponse.cookie(&#x27;iviUser&#x27;, userId, { expires: new Date(new Date().getTime()+1000*60*60*24*30*24), httpOnly: true });
+
+        aResponse.render(&quot;userLogin&quot;, {});
+    }
+
+    &#x2F;**
+    * &#x60;[GET] &#x2F;get&#x60; Get list of user currently in database.
+    * @method get
+    * @return {UserData[]}
+    *&#x2F;
+    get(aRequest: express.ExpressServerRequest, aResponse: express.ExpressServerResponse) {
+        aResponse.json(this.userDetails);
+    }
+}
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<script src="..&#x2F;assets/../api.js"></script>
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>
